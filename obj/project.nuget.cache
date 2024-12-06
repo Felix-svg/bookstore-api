@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WUrsxNf2JfA=",
+  "success": true,
+  "projectFilePath": "D:\\Development\\C#\\BackEndDev\\BookStoreAPI\\BookStoreAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\FelixOmondiOnyango\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\FelixOmondiOnyango\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
