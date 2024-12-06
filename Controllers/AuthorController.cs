@@ -38,7 +38,7 @@ namespace BookStoreAPI.Controllers
         {
             newAuthor.Id = AppDBContext._authorsList.Count + 1;
             AppDBContext._authorsList.Add(newAuthor);
-            return CreatedAtAction(nameof(GetAuthor), newAuthor.Id, newAuthor);
+            return CreatedAtAction(nameof(GetAuthor), new { id = newAuthor.Id }, newAuthor);
         }
 
         // PUT /api/authors/{id}
@@ -46,7 +46,7 @@ namespace BookStoreAPI.Controllers
         public IActionResult PutAuthor([FromBody] Author updatedAuthor, int id)
         {
             var authorOld = AppDBContext._authorsList.Find(author => author.Id == id);
-            if(authorOld == null)
+            if (authorOld == null)
             {
                 return NotFound("Author not found");
             }

@@ -38,7 +38,7 @@ namespace BookStoreAPI.Controllers
         {
             newBook.Id = AppDBContext._booksList.Count + 1;
             AppDBContext._booksList.Add(newBook);
-            return CreatedAtAction(nameof(GetBook), newBook.Id, newBook);
+            return CreatedAtAction(nameof(GetBook), new { id = newBook.Id }, newBook);
         }
 
         // PUT /api/books/{id}
